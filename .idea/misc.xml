@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.213" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/drawable/side_nav_bar.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_log.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_register.xml" value="0.3233695652173913" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/app_bar_main.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_enterprise_register.xml" value="0.3484375" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_gallery.xml" value="0.3233695652173913" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_home.xml" value="0.3233695652173913" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_slideshow.xml" value="0.3233695652173913" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_student_register.xml" value="0.3625" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/idiom_cardview.xml" value="0.3269927536231884" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/nav_header_main.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/profile_fragment.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/layout/vacants_cardview.xml" value="0.3625" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/menu/activity_main_drawer.xml" value="0.3625" />
+        <entry key="..\:/Users/Rubio/OneDrive/Documentos/GitHub/clases/programacion_movil/BolsaSalesianos/app/src/main/res/menu/main.xml" value="0.3625" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/drawable/side_nav_bar.xml" value="0.113" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_base.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_log.xml" value="0.25" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/app_bar_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/cardview_idiom.xml" value="0.1" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/cardview_study.xml" value="0.6402877697841727" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/cardview_vacant.xml" value="0.5" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/content_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_enterprise_register.xml" value="0.33" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_idioms.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_student_register.xml" value="0.33" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/fragment_studies_student.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/idiom_cardview.xml" value="0.5" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/nav_header_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/profile_fragment.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/study_cardview.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/layout/vacants_cardview.xml" value="0.33" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/menu/activity_main_drawer.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/arubi/OneDrive/Documentos/GitHub/segundo_dam/programacion_movil/BolsaSalesianos/app/src/main/res/menu/main.xml" value="0.23958333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

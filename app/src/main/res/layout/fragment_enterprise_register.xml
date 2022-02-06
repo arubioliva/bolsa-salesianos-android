@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.register.EnterpriseRegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/logo_salesianos2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/example_text"
+                app:srcCompat="@drawable/logo_salesianos_pizarrales" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/register_cif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/cif"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/enterprise_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/contact_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/phone"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/user"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/register_enterprise_pass_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:ems="10"
+                    android:fontFamily="@font/rubik_medium"
+                    android:hint="@string/repeat_pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/register_enterprise_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/rubik_medium"
+                        android:minHeight="48dp"
+                        android:text="@string/end_register"
+                        android:textSize="20sp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

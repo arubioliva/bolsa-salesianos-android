@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bolsasalesianos.ui.home.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.bolsasalesianos.ui.home.fragments.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_studies"
+        android:name="com.example.bolsasalesianos.ui.home.fragments.StudiesStudentFragment"
+        android:label="@string/students_studies"
+        tools:layout="@layout/fragment_studies_student" />
+    <fragment
+        android:id="@+id/nav_idioms"
+        android:name="com.example.bolsasalesianos.ui.home.fragments.IdiomsFragment"
+        android:label="@string/student_idioms"
+        tools:layout="@layout/fragment_idioms" />
+</navigation>
