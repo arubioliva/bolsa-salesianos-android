@@ -20,5 +20,9 @@
             android:id="@+id/nav_idioms"
             android:icon="@drawable/ic_baseline_language"
             android:title="@string/student_idioms" />
+        <item
+            android:id="@+id/nav_edit_studies"
+            android:icon="@drawable/ic_baseline_book"
+            android:title="@string/change_studies" />
     </group>
 </menu>

@@ -44,5 +44,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="students_studies">Tus estudios</string>
     <string name="student_idioms">Tus idiomas</string>
+    <string name="save_study">Guardar nuevo estudio</string>
+    <string name="save_Idiom">Guardar nuevo idioma</string>
+    <string name="change_studies">Camabiar estudios</string>
 
 </resources>

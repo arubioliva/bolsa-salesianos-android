@@ -4,8 +4,10 @@ package com.example.bolsasalesianos.database;
 import com.example.bolsasalesianos.pojos.Credential;
 import com.example.bolsasalesianos.pojos.Enterprise;
 import com.example.bolsasalesianos.pojos.Idiom;
+import com.example.bolsasalesianos.pojos.IdiomStudent;
 import com.example.bolsasalesianos.pojos.Status;
 import com.example.bolsasalesianos.pojos.Student;
+import com.example.bolsasalesianos.pojos.Study;
 import com.example.bolsasalesianos.pojos.StudyStudent;
 
 import java.util.List;
@@ -44,7 +46,13 @@ public interface Services {
     Call<List<StudyStudent>> searchStudies(@Body StudyStudent studyStudent);
 
     @POST("idioms_student&option=idioms_by_student")
-    Call<List<Idiom>> searchIdiomsByStudent(@Body Student student);
+    Call<List<IdiomStudent>> searchIdiomsByStudent(@Body Student student);
+
+    @POST("studies")
+    Call<List<Study>> getStudies(@Body Study study);
+
+    @POST("idioms")
+    Call<List<Idiom>> getIdioms(@Body Idiom idiom);
 }
 
 

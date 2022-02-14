@@ -26,7 +26,7 @@
                 app:srcCompat="@drawable/ic_baseline_language" />
 
             <TextView
-                android:id="@+id/idiom"
+                android:id="@+id/idiomStudent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/example_text" />

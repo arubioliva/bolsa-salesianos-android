@@ -52,7 +52,7 @@ public class LogActivity extends GenericActivity implements View.OnClickListener
                 if (response.body() == null) {
                     setTextViewError(R.id.log_user_area, "El nombre de usuario es incorrecto.");
                 } else if (!response.body().getPass().equals(getViewText(R.id.log_pass_area))) {
-                    setTextViewError(R.id.log_pass_area, "Contraseñas incorrecta.");
+                    setTextViewError(R.id.log_pass_area, "Contraseña incorrecta.");
                 } else {
                     setLastConnection(response.body());
                     saveUserCredentials(response.body());

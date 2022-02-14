@@ -3,41 +3,41 @@ package com.example.bolsasalesianos.pojos;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Idiom {
+public class IdiomStudent {
 
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private String id;
     @SerializedName("language")
     @Expose
     private String language;
     @SerializedName("level")
     @Expose
     private String level;
+    @SerializedName("student")
+    @Expose
+    private String student;
+    @SerializedName("idiom")
+    @Expose
+    private String idiom;
 
-    /**
-     * No args constructor for use in serialization
-     */
-    public Idiom() {
+    public IdiomStudent() {
     }
 
-    /**
-     * @param level
-     * @param language
-     * @param id
-     */
-    public Idiom(Integer id, String language, String level) {
+    public IdiomStudent(String id, String language, String level, String student, String idiom) {
         super();
         this.id = id;
         this.language = language;
         this.level = level;
+        this.student = student;
+        this.idiom = idiom;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -55,6 +55,22 @@ public class Idiom {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+
+    public String getStudent() {
+        return student;
+    }
+
+    public void setStudent(String student) {
+        this.student = student;
+    }
+
+    public String getIdiom() {
+        return idiom;
+    }
+
+    public void setIdiom(String idiom) {
+        this.idiom = idiom;
     }
 
 }

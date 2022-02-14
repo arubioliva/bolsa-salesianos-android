@@ -25,4 +25,9 @@
         android:name="com.example.bolsasalesianos.ui.home.fragments.IdiomsFragment"
         android:label="@string/student_idioms"
         tools:layout="@layout/fragment_idioms" />
+    <fragment
+        android:id="@+id/nav_edit_studies"
+        android:name="com.example.bolsasalesianos.ui.home.fragments.AddStudiesFragment"
+        android:label="@string/change_studies"
+        tools:layout="@layout/fragment_add_studies" />
 </navigation>

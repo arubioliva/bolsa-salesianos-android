@@ -19,6 +19,7 @@ public class BaseActivity extends GenericActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         initializeSharedPreferences();
+        getLoginSP().edit().clear().apply();
         database = new Database();
         tryLogin();
     }

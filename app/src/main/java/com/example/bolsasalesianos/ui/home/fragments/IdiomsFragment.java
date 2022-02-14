@@ -14,11 +14,9 @@ import android.view.ViewGroup;
 
 import com.example.bolsasalesianos.R;
 import com.example.bolsasalesianos.adapters.IdiomStudentAdapter;
-import com.example.bolsasalesianos.adapters.StudyStudentAdapter;
 import com.example.bolsasalesianos.database.Database;
-import com.example.bolsasalesianos.pojos.Idiom;
+import com.example.bolsasalesianos.pojos.IdiomStudent;
 import com.example.bolsasalesianos.pojos.Student;
-import com.example.bolsasalesianos.pojos.StudyStudent;
 
 import java.util.List;
 
@@ -54,9 +52,9 @@ public class IdiomsFragment extends BaseFragment {
     private void fillRecycler() {
         Student student = new Student();
         student.setDni(getStudentSP().getString("dni",null));
-        database.getServices().searchIdiomsByStudent(student).enqueue(new Callback<List<Idiom>>() {
+        database.getServices().searchIdiomsByStudent(student).enqueue(new Callback<List<IdiomStudent>>() {
             @Override
-            public void onResponse(Call<List<Idiom>> call, Response<List<Idiom>> response) {
+            public void onResponse(Call<List<IdiomStudent>> call, Response<List<IdiomStudent>> response) {
                 if (response.body() != null){
                     RecyclerView recyclerView = getView().findViewById(R.id.idioms_list);
                     IdiomStudentAdapter idiomStudentAdapter = new IdiomStudentAdapter(response.body());
@@ -67,7 +65,7 @@ public class IdiomsFragment extends BaseFragment {
             }
 
             @Override
-            public void onFailure(Call<List<Idiom>> call, Throwable t) {
+            public void onFailure(Call<List<IdiomStudent>> call, Throwable t) {
 
             }
         });
