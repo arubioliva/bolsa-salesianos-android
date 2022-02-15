@@ -25,7 +25,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/register_name2"
+            android:id="@+id/profile_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -41,7 +41,7 @@
             tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/register_last_name2"
+            android:id="@+id/profile_last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -57,7 +57,7 @@
             tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/register_email2"
+            android:id="@+id/profile_student_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -73,7 +73,23 @@
             tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/register_user2"
+            android:id="@+id/profile_resume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:fontFamily="@font/rubik_medium"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/profile_student_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -89,7 +105,7 @@
             tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/register_pass2"
+            android:id="@+id/profile_student_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -111,7 +127,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/register_button"
+                android:id="@+id/save_changes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

@@ -51,6 +51,18 @@ public class Student {
         this.employed = employed;
         this.dataTransf = dataTransf;
     }
+    public Student(String dni, String name, String lastName, String phone, String email,String resume, String license, String employed,String dataTransf) {
+        super();
+        this.dni = dni;
+        this.name = name;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
+        this.resume = resume;
+        this.license = license;
+        this.employed = employed;
+        this.dataTransf = dataTransf;
+    }
 
     public String getDni() {
         return dni;

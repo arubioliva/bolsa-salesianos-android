@@ -39,7 +39,7 @@ public class StudyStudentAdapter extends RecyclerView.Adapter<StudyStudentAdapte
         return studiesStudent.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         private TextView study;
         private TextView date;
 

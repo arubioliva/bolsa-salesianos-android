@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bolsasalesianos.database.Database;
 import com.example.bolsasalesianos.pojos.Credential;
+import com.example.bolsasalesianos.pojos.Status;
 
 import java.text.Format;
 import java.text.SimpleDateFormat;
@@ -22,6 +22,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 /*
 * Actividad donde guardo metodos que necesito reutilizar en varias actividades diferentes.
 * */
@@ -61,6 +62,17 @@ public class GenericActivity extends AppCompatActivity {
         String today = getDay();
         Database database = new Database();
         credential.setLastConnection(today);
+        database.getServices().updateCredential(credential).enqueue(new Callback<Status>() {
+            @Override
+            public void onResponse(Call<Status> call, Response<Status> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<Status> call, Throwable t) {
+
+            }
+        });
     }
 
     /*

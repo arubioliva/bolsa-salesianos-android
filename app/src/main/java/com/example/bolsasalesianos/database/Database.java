@@ -15,7 +15,7 @@ public class Database {
         Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://557ded9c.gclientes.com/api_rubio/")
+                .baseUrl("https://c4ytrsshj.gclientes.com/api_rubio/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 

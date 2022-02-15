@@ -1,6 +1,7 @@
 package com.example.bolsasalesianos.activities;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.bolsasalesianos.R;
 import com.example.bolsasalesianos.database.Database;
@@ -12,14 +13,13 @@ import retrofit2.Response;
 
 public class BaseActivity extends GenericActivity {
     private Database database;
-    private Credential credential;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         initializeSharedPreferences();
-        getLoginSP().edit().clear().apply();
+//        getLoginSP().edit().clear().apply();
         database = new Database();
         tryLogin();
     }
@@ -34,12 +34,11 @@ public class BaseActivity extends GenericActivity {
         call.enqueue(new Callback<Credential>() {
             @Override
             public void onResponse(Call<Credential> call, Response<Credential> response) {
-                credential = response.body();
-                if (credential.getId() == null) {
+                if (response.body().getId() == null) {
                     startActivityAndFinishActually(getApplicationContext(), LogActivity.class);
                 } else {
-                    setLastConnection(credential);
-                    startActivityAndFinishActually(getApplicationContext(),MainActivity.class);
+                    setLastConnection(response.body());
+                    startActivityAndFinishActually(getApplicationContext(), MainActivity.class);
                 }
             }
             @Override

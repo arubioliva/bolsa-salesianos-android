@@ -46,6 +46,9 @@
     <string name="student_idioms">Tus idiomas</string>
     <string name="save_study">Guardar nuevo estudio</string>
     <string name="save_Idiom">Guardar nuevo idioma</string>
-    <string name="change_studies">Camabiar estudios</string>
+    <string name="change_studies">Actualizar estudios</string>
+    <string name="remove_idiom">Eliminar idioma seleccionado</string>
+    <string name="remove_study">Eliminar estudio seleccionado</string>
+    <string name="resume">Curriculum</string>
 
 </resources>

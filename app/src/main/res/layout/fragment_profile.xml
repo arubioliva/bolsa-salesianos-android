@@ -96,6 +96,22 @@
                 android:textAllCaps="false"
                 tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
+            <EditText
+                android:id="@+id/profile_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner"
+                android:ems="10"
+                android:fontFamily="@font/rubik_medium"
+                android:hint="@string/resume"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
             <CheckBox
                 android:id="@+id/profile_license_check"
                 android:layout_width="match_parent"

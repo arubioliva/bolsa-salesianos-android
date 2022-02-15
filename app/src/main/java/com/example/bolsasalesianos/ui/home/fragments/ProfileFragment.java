@@ -99,6 +99,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
                     setViewText(R.id.profile_last_name, student.getLastName());
                     setViewText(R.id.profile_phone, student.getPhone());
                     setViewText(R.id.profile_email, student.getEmail());
+                    setViewText(R.id.profile_resume, student.getResume());
                     setCheckBox(R.id.profile_license_check, student.getLicense());
                     setCheckBox(R.id.profile_employed_check, student.getEmployed());
                     setCheckBox(R.id.profile_data_transfer_check, student.getDataTransf());
@@ -166,7 +167,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     public Student createStudentFromForm() {
         return new Student(getViewText(R.id.profile_dni), getViewText(R.id.profile_name),
                 getViewText(R.id.profile_last_name), getViewText(R.id.profile_phone),
-                getViewText(R.id.profile_email), getCheckValue(R.id.profile_license_check),
+                getViewText(R.id.profile_email),getViewText(R.id.profile_resume), getCheckValue(R.id.profile_license_check),
                 getCheckValue(R.id.profile_employed_check), getCheckValue(R.id.profile_data_transfer_check));
     }
 
