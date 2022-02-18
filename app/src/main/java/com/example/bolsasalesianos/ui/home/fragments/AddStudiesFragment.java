@@ -133,7 +133,7 @@ public class AddStudiesFragment extends BaseFragment implements View.OnClickList
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onResponse(Call<List<IdiomStudent>> call, Response<List<IdiomStudent>> response) {
-                if (response.body().size() != 0) {
+                if (response.body()!=null) {
                     List<String> idioms = response.body().stream().map(o -> o.getLanguage() + "-" + o.getLevel()).collect(Collectors.toList());
                     ArrayAdapter<String> idiomsAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, idioms);
                     Spinner idiomsSpin = getView().findViewById(R.id.student_idiom_sel);

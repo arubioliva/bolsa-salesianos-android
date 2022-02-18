@@ -56,7 +56,7 @@ public class HomeFragment extends BaseFragment {
         database.getServices().getVacants(student).enqueue(new Callback<List<Vacant>>() {
             @Override
             public void onResponse(Call<List<Vacant>> call, Response<List<Vacant>> response) {
-                if (response.body().size() != 0) {
+                if (response.body()!= null) {
                     RecyclerView recyclerView = getView().findViewById(R.id.vacants_list);
                     VacantsAdapter vacantsAdapter = new VacantsAdapter(response.body(), student.getDni());
                     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
