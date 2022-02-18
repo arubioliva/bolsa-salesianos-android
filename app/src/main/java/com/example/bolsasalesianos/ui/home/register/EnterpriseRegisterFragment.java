@@ -45,7 +45,7 @@ public class EnterpriseRegisterFragment extends Fragment implements View.OnClick
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((Button) getView().findViewById(R.id.register_enterprise_button)).setOnClickListener(this);
+        getView().findViewById(R.id.register_enterprise_button).setOnClickListener(this);
         database = new Database();
     }
 

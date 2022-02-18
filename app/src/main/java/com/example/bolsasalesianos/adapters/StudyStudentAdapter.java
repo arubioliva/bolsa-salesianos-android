@@ -40,8 +40,8 @@ public class StudyStudentAdapter extends RecyclerView.Adapter<StudyStudentAdapte
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView study;
-        private TextView date;
+        private final TextView study;
+        private final TextView date;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

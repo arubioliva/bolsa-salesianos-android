@@ -44,7 +44,7 @@ public class StudentRegisterFragment extends BaseFragment implements View.OnClic
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((Button) getView().findViewById(R.id.register_student_button)).setOnClickListener(this);
+        getView().findViewById(R.id.register_student_button).setOnClickListener(this);
         database = new Database();
     }
 

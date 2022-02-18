@@ -33,7 +33,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
         super.onViewCreated(view, savedInstanceState);
         database = new Database();
         initializeSharedPreferences();
-        ((Button) getView().findViewById(R.id.profile_save_data)).setOnClickListener(this);
+        getView().findViewById(R.id.profile_save_data).setOnClickListener(this);
         fillUserForm();
     }
 

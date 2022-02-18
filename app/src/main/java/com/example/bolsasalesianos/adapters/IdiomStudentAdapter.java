@@ -39,8 +39,8 @@ public class IdiomStudentAdapter extends RecyclerView.Adapter<IdiomStudentAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView idiom;
-        private TextView level;
+        private final TextView idiom;
+        private final TextView level;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

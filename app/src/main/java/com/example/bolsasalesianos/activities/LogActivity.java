@@ -56,9 +56,11 @@ public class LogActivity extends GenericActivity implements View.OnClickListener
                 } else {
                     setLastConnection(response.body());
                     saveUserCredentials(response.body());
+
                     if (response.body().getType().equals("Estudiante")) {
                         saveStudentCredentials(response.body().getId());
                     }
+
                     startActivityAndFinishActually(getApplicationContext(), MainActivity.class);
                 }
             }

@@ -24,6 +24,7 @@ import com.example.bolsasalesianos.pojos.Student;
 import com.example.bolsasalesianos.pojos.Study;
 import com.example.bolsasalesianos.pojos.StudyStudent;
 
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedHashSet;
@@ -41,7 +42,7 @@ import retrofit2.Response;
  * create an instance of this fragment.
  */
 public class AddStudiesFragment extends BaseFragment implements View.OnClickListener {
-
+    @RequiresApi(api = Build.VERSION_CODES.N)
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -94,10 +95,11 @@ public class AddStudiesFragment extends BaseFragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
         database = new Database();
         initializeSharedPreferences();
-        ((Button) getView().findViewById(R.id.save_study_btn)).setOnClickListener(this);
-        ((Button) getView().findViewById(R.id.save_idiom_btn)).setOnClickListener(this);
-        ((Button) getView().findViewById(R.id.remove_study_btn)).setOnClickListener(this);
-        ((Button) getView().findViewById(R.id.remove_idiom_btn)).setOnClickListener(this);
+        getView().findViewById(R.id.save_study_btn).setOnClickListener(this);
+        getView().findViewById(R.id.save_idiom_btn).setOnClickListener(this);
+        getView().findViewById(R.id.remove_study_btn).setOnClickListener(this);
+        getView().findViewById(R.id.remove_idiom_btn).setOnClickListener(this);
+
         initYearsSpinners();
         initStudiesSpinner();
         inintIdiomsSpinner();
@@ -153,6 +155,7 @@ public class AddStudiesFragment extends BaseFragment implements View.OnClickList
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onResponse(Call<List<Idiom>> call, Response<List<Idiom>> response) {
+                System.out.println(response.body());
                 List<String> idioms = response.body().stream().map(Idiom::getLanguage).collect(Collectors.toList());
                 ArrayAdapter<String> idiomsAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, idioms);
                 Spinner idiomsSpin = getView().findViewById(R.id.idiom_language);
@@ -176,7 +179,6 @@ public class AddStudiesFragment extends BaseFragment implements View.OnClickList
 
     private void initStudiesSpinner() {
         database.getServices().getStudies(new Study()).enqueue(new Callback<List<Study>>() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onResponse(Call<List<Study>> call, Response<List<Study>> response) {
                 List<String> studies = response.body().stream().map(Study::getName).collect(Collectors.toList());
