@@ -1,8 +1,11 @@
 package com.example.bolsasalesianos.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -40,6 +43,16 @@ public class MainActivity extends GenericActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()== R.id.action_settings){
+            getLoginSP().edit().clear().apply();
+            startActivityAndFinishActually(this, BaseActivity.class);
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
